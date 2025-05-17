@@ -38,7 +38,7 @@ function typeWriterBlock(block, cb) {
         if (idx < lines[l].length) {
           terminal.textContent += lines[l].charAt(idx);
           idx++;
-          setTimeout(type, 10);
+          setTimeout(type, 2); // Faster loading speed
         } else {
           terminal.textContent += '\n';
           l++;
